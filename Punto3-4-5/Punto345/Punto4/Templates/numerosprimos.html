@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+ 
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <title>Número Primos</title>
+</head>
+ 
+<body>
+ 
+<div class="container">
+    <h2>Los primeros numeros primos son:</h2>
+    {% for prime in primos %}
+        <div class="post">
+        <h3> {{ prime.key }}  {{ prime.primo }}</h3>
+        </div>
+        <hr />
+    {% endfor %}
+ 
+</div>
+ 
+</body>
+     
+</html>
